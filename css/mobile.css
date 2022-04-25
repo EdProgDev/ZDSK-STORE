@@ -181,10 +181,13 @@
     .feedback__user, .feedback__privacy {
         flex-direction: column;
     }
-    .feedback__label, .footer__address {
+    .feedback__label, .footer__address, .benefits__title {
         margin-top: 15px;
     }
     .footer .logo__subtitle {
         display: block;
+    }
+    .footer__bottom-content {
+        align-items: flex-start;
     }
 }
