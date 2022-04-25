@@ -1,0 +1,190 @@
+@media(max-width: 991px) {
+    .header__top, .open-search-input {
+        display: none;
+    }
+    .burger, .header__mobile-search , .header__mobile-number, .close-menu {
+        display: flex;
+    }
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+        transform: translate(-100%, 0);
+        transition: 0.3s;
+
+        background-color: #051126;
+    }
+    .nav__list {
+        flex-direction: column;
+        margin-left: 0;
+        width: 50%;
+    }
+    .footer .nav__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .nav__item {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .footer .nav__item {
+        margin-right: 20px;
+    }
+    .nav__link {
+        font-size: 20px;
+    }
+    .footer .nav__link {
+        font-size: 16px;
+    }
+    .bg__content {
+        flex-direction: column-reverse;
+    }
+    .bg__left {
+        max-width: 80%;
+    }
+    .bg__image {
+        width: 80%;
+    }
+    .home-catalog__content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about-production__card {
+        padding: 20px;
+    }
+    .about-production__image {
+        padding: 10px;
+    }
+    .benefits__content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-info  {
+        max-width: 50%;
+    }
+    .card-info__title {
+        height: 70px;
+    }
+    .footer__nav-bottom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+    .home-catalog__content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .home-catalog, .about-production, .benefits, .home-news, .feedback {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .catalog__card {
+        padding: 10px;
+    }
+    .about-production__content, .benefits__content {
+        grid-template-columns: 1fr;
+    }
+    .card-info  {
+        max-width: none;
+    }
+    .home-news__content {
+        flex-wrap: nowrap;
+    }
+    .card-info__title {
+        height: 100px;
+    }
+    .feedback__content {
+        max-width: 100%;
+    }
+    .footer__nav-content, .footer__top-content, .footer__bottom-content {
+        flex-direction: column;
+    }
+    .footer__nav-right {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+        border-left: none;
+    }
+    .footer__contacts {
+        align-items: flex-start;
+    }
+    .footer__contacts .number, .footer__contacts .header__contact-email {
+        margin-left: 0 !important;
+    }
+    .footer__address {
+        justify-content: flex-start;
+    }
+    .footer__mobile-search {
+        display: flex !important;
+    }
+    .footer__contacts .header__contact-email, .footer__privacy {
+        margin-top: 5px;
+    }
+    .footer-form__seacrh{
+        width: 100%;
+    }
+    .footer__top-content form {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 530px) {
+    .logo__subtitle {
+        display: none;
+    }
+    .logo__title {
+        font-size: 35px;
+    }
+    .header__mobile-search , .header__mobile-number {
+        margin-right: 10px;
+    }
+    .nav__list {
+        width: 90%;
+    }
+    .bg__image, .bg__left, .feedback__btn-submit {
+        width: 100%;
+        max-width: 100%;
+    }
+    .bg__btns {
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    .card__btn-basket {
+        margin-top: 10px;
+    }
+    .home-catalog__content, .about-production__content, .benefits__title .home-news__content {
+        margin-top: 25px;
+    }
+    .about-production__card, .benefits__card {
+        padding: 10px;
+    }
+    .feedback__user input {
+        height: 45px;
+        width: 100%;
+        margin-top: 7px;
+    }
+    .feedback__user input:first-child {
+        margin-right: 0;
+    }
+    .feedback__content textarea, .feedback__privacy {
+        margin-top: 15px;
+    }
+    .feedback__user, .feedback__privacy {
+        flex-direction: column;
+    }
+    .feedback__label, .footer__address {
+        margin-top: 15px;
+    }
+    .footer .logo__subtitle {
+        display: block;
+    }
+}
